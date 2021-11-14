@@ -4,23 +4,23 @@ import java.util.regex.Pattern;
 
 public class UserValidator {
 
-    public static boolean validateDetails(String guysWithMe, String matcherWithRejex,String pattern) {
+    public static boolean validateDetails(String userInput, String matcherWithRejex,String pattern) {
 
         switch(pattern){
             case "EMAIL_PATTERN":
-                boolean forTestEmail = Pattern.matches(guysWithMe, matcherWithRejex);
+                boolean forTestEmail = Pattern.matches(userInput, matcherWithRejex);
                 return forTestEmail;
             case "FIRST_NAME_PATTERN":
-                boolean forTestFirstName = Pattern.matches(guysWithMe, matcherWithRejex);
+                boolean forTestFirstName = Pattern.matches(userInput, matcherWithRejex);
                 return forTestFirstName;
             case "LAST_NAME_PATTERN":
-                boolean forTestLastName = Pattern.matches(guysWithMe, matcherWithRejex);
+                boolean forTestLastName = Pattern.matches(userInput, matcherWithRejex);
                 return forTestLastName;
             case "MOBILE_NO_PATTERN":
-                boolean forTestmobileNumber = Pattern.matches(guysWithMe, matcherWithRejex);
+                boolean forTestmobileNumber = Pattern.matches(userInput, matcherWithRejex);
                 return forTestmobileNumber;
             case "PASSWORD_PATTERN":
-                boolean forTestPassword = Pattern.matches(guysWithMe, matcherWithRejex);
+                boolean forTestPassword = Pattern.matches(userInput, matcherWithRejex);
                 return forTestPassword;
             default:
                 System.out.println("invalid input");
